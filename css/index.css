@@ -18,3 +18,13 @@
     width: 18px;
     height: 16px;
 }
+.scrin-first {
+    background: url('../images/main-img-mobile.jpg');
+    height: 463px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    gap: 16px;
+
+}
