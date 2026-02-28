@@ -5,19 +5,35 @@
     justify-content: space-between;
     padding: 15px;
 }
+@media (min-width: 321px) {
+    .header{
+        padding: 45px;
+    }
+}
+@media (min-width: 769px) {
+    .header{
+        padding: 98px;
+    }
+}
 
-.icon-logo {
-    width: 52px;
-    height: 52px;
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 70px;
 }
-.icon-menu {
-    width: 25px;
-    height: 20px;
+@media (min-width: 321px) {
+    .main{
+        padding: 0 45px;
+    }
 }
-.icon-basket {
-    width: 18px;
-    height: 16px;
+@media (min-width: 769px) {
+    .main{
+        padding: 0 98px;
+    }
 }
+
+
 .scrin-first {
     background: url('../images/main-img-mobile.jpg');
     height: 463px;
@@ -26,5 +42,182 @@
     justify-content: center;
     align-items: center;    
     gap: 16px;
+
+}
+@media (min-width: 321px) {
+    .scrin-first {
+        background: url('../images/main-img-tablet.jpg');
+    }
+}
+@media (min-width: 769px) {
+    .scrin-first {
+        background: url('../images/main-img-desktop.jpg');
+    }
+}
+
+
+.new-in {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 40px;
+}
+.section-name{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.name-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-in_shop-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.shop-card {
+    flex: 0 0 calc((100% - 30px) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+@media (min-width: 769px){
+    .shop-card {
+        flex: 0 0 calc((100% - 90px) / 4);
+    }
+}
+.hide {
+        display: none;
+}
+
+@media (min-width:769px){
+    .hide {
+        display: flex;
+    }
+}
+.shop-card_gap-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+}
+.cards-page-mobile, .cards-page-tablet, .cards-page-decstop {
+    display: none;
+}
+
+@media (max-width: 320px) {
+    .cards-page-mobile {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+    .cards-page-tablet {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 769px) {
+    .cards-page-decstop {
+        display: flex;
+        justify-content: center;
+    }
+}
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+@media (min-width:769px){
+    .blog {
+        gap:60px
+    }
+    
+}
+.blog_all-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.align-for-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.blog_one-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog_brown-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0EAE4;
+    padding: 49px 0;
+    gap:25px;
+}
+
+@media (min-width: 321px) {
+    .blog_one-card {
+        flex-direction: row;
+        height: 300px; 
+        width: 678px;
+    }
+
+    .small-blok-img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .blog_brown-card {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media (min-width: 769px) {
+    .blog_one-card {
+        flex-direction: row;
+        height: 300px; 
+        width: 570px;
+    }
+    .blog_all-cards {
+        flex-direction: row; 
+        gap: 30px;
+    }
+    .align-for-desktop {
+        width: 570px;
+        height: 630px;
+    }
+
+    .big-blok-desktop {
+        width: 570px;
+        height: 630px;
+        display: flex;
+        position: relative;
+        justify-content: end;
+        align-items: flex-end;
+    }
+    .big-blok-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .blog_big-brown-card {
+        position: absolute;
+    }
 
 }

@@ -15,11 +15,13 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
 }
+
 h2 {
   font-size: 34px;
   font-family: 'Cormorant Garamond', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin-bottom: 35px;
 }
 h3 {
   font-size: 26px;
@@ -27,8 +29,60 @@ h3 {
   font-weight: 600;
   
 }
-.text-italic {
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.text-italic-white {
   font-style: italic;
   color: #fff;
   font-weight: 400;
+}
+.text-italic-black {
+  font-style: italic;
+  color: #000;
+  font-weight: 600;
+  line-height: 130%;
+}
+.text-bold {
+ font-weight: bold;
+}
+.color-grey-text {
+  color: #9b9997;
+}
+
+.brown-line::after {
+  content: "";
+  height: 1px;
+  width: 80px;
+  background-color: #A87B62;
+  display: block;
+  flex-shrink: 0;
+  margin: 6px auto 0;
+}
+.img-buy {
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* квадрат */
+  object-fit: cover;
+  display: block;
+}
+.icon-logo {
+    width: 52px;
+    height: 52px;
+}
+@media (min-width: 321px) {
+  .icon-logo {
+    width: 66px;
+    height: 66px;
+ }
+}
+.icon-menu {
+    width: 25px;
+    height: 20px;
+}
+.icon-basket {
+    width: 18px;
+    height: 16px;
 }
