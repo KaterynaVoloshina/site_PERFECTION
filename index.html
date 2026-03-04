@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style-all-pages.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
-  <title>Главная</title>
+  <title>Головна</title>
   <style>
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -16,9 +16,61 @@
   <body>
    
     <header class="header">
-        <img class="icon-menu" src="images/menu.svg"  alt="menu">
-        <img class="icon-logo" src="images/logo.png"  alt="logo">
-        <img class="icon-basket" src="images/basket.svg" alt="basket">
+
+        <div class="header_only-mobile-tablet">
+            <img class="icon-menu" src="images/menu.svg"  alt="menu">
+            <img class="icon-logo" src="images/logo.png"  alt="logo">
+            <img class="icon-basket" src="images/basket.svg" alt="basket">
+        </div>
+
+        <section class="menu-modal hide-menu">
+            <div class="menu-modal_icon">
+                <img class="icon-menu" src="images/menu-white.png"  alt="menu">
+                <img class="icon-logo" src="images/logo-white.png"  alt="logo">
+                <img class="icon-basket" src="images/basket-white.png" alt="basket">
+            </div>
+            <div class="menu-modal_search"><img src="images/zoom.png"></div>
+            <nav class="menu-modal_text" >
+                <li><a href="index.html">What's new</a></li>
+                <li><a href="catalog.html">Chokers</a></li>
+                <li><a href="#">Necklaces</a></li>
+                <li><a href="#">Rings</a></li>
+                <li><a href="#">Earrings</a></li>   
+            <nav class="menu-modal_text-opacity" >
+                <li><a href="#">About CH</a></li>
+                <li><a href="#">Stores & Hours</a></li>
+                <li><a href="#">Contact Us</a></li>  
+            </nav>
+            <li><a href="#">Login</a></li> 
+            </nav>
+
+
+        </section>
+
+        <section class="header_only-desktop">
+            <article class="header_top-menu">
+                <div class="header_left">
+                   <img class="icon-zoom-black" src="images/zoom-black.svg">
+                   <p class="color-grey-text">Type here to search</p>
+                </div>
+                <img class="icon-logo" src="images/logo.png"  alt="logo">
+                <div class="header_rigth">
+                    <p>Login</p>
+                    <p>Cart</p>
+                    <p>0</p>
+                </div>
+            </article>
+            <article class="header_bottom-menu">
+                <nav class="menu_text-only-desktop" >
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Chokers</a></li>
+                <li><a href="#">Necklaces</a></li>
+                <li><a href="#">Rings</a></li>
+                <li><a href="#">Earrings</a></li>   
+                 </nav>
+            </article>
+        </section>
+        
     </header>
    
     <section class="scrin-first">
@@ -170,8 +222,7 @@
             <div class="Chjewellery_galery-big-display">
                 <div class="column-big-display">
                     <img  class="small-display-img" src="images/22.jpg" alt="necklace earrings set">
-                    <img class="small-display-img" src="images/16@2x.jpg" alt="set of earrings with precious stones">
-                    
+                    <img class="small-display-img" src="images/16@2x.jpg" alt="set of earrings with precious stones">   
                 </div>
                 <div class="column-big-display-img">
                     <img class="big-display-img" src="images/10@2x.jpg" alt="women">
