@@ -1,0 +1,321 @@
+.scrin-first {
+    background: url('../images/main-img-catalog.jpg');
+    height: 261px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    padding: 0 36px;
+
+}
+@media (min-width: 321px) {
+    .scrin-first {
+        background: url('../images/main-img-catalog-tablet.jpg');
+    }
+}
+@media (min-width: 769px) {
+    .scrin-first {
+        background: url('../images/main-img-catalog-desktop.jpg');
+    }
+}
+.button-filter {
+    width: 100%;
+    height: 68px;
+    background-color: #A87B62;
+    text-align: center;
+    color: white;
+}
+@media (min-width:769px) {
+    .button-filter {
+        display: none;
+    }
+}
+.button-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    }
+.button-apply {
+    width: 100%;
+    height: 68px;
+    background-color: #A87B62;
+    text-align: center;
+    color: white;
+}
+.button-clear {
+    width: 100%;
+    height: 68px;
+    border-radius: 1px;
+    border-color:#A87B62;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    color: #1D1613;
+}
+
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.filter_one-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    border-width: 1px;
+    border-color: #A87B62;
+    border-style: solid;
+    padding: 25px;
+}
+.filter_text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.arrow-align {
+    width: 20px;
+    height: 10px;
+}
+.windows-filter_close {
+    display: none;
+}
+
+
+@media (max-width:768px){
+    .windows-filter {
+        display: block;
+        position: fixed;
+        background-color: white;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+        /* */
+    .hide-filter {
+    display: none;
+    }
+    .windows-filter_close {
+        display: block;
+        position: absolute;
+        left: 260px;
+        top: -10px;
+}
+}
+@media (max-width:320px){
+    .windows-filter {
+        display: block;
+        position: fixed;
+        background-color: white;
+        width: 270px;
+        height: 736px;
+        transform: translate(-50%, -50%);
+        top: 60%;
+        left: 50%;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    .windows-filter_close {
+        display: block;
+        position: absolute;
+        left: 260px;
+        top: -10px;
+}
+        /* */
+    .hide-filter {
+    display: none;
+    }
+}
+
+input[type="checkbox"] {
+  appearance: none;        
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #A87B62; 
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+input[type="checkbox"]:checked {
+  background-color: #A87B62; 
+}
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+.catalog-galery {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    gap: 40px;
+}
+
+aside {
+    display: none;
+}
+@media (min-width:769px){
+    aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+}
+.price_point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.longline {
+    position: relative;
+    width: 202px;
+    height: 1px;
+    background: #F0EAE4;
+}
+.shortline {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    height: 1px;
+    margin-left: 45px;
+    background: #A87B62;
+}
+.circl {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #A87B62;
+}
+.price_input {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+.page-mobile {
+    display: flex;
+    justify-content: center;
+}
+.page-mobile_name {
+    display: none;
+}
+
+@media (min-width:769px){
+    .page-mobile_name {
+    display: block;
+    }
+}
+@media (min-width:321px){
+    .page-mobile_name {
+    display: block;
+    }
+    .page-mobile {
+    justify-content: space-between;
+    }
+}
+.page-mobile_nombers {
+    display: flex;
+    gap: 25px;
+}
+
+.LogIn {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: auto;
+    gap: 45px;
+    background-color: #F0EAE4;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding-bottom: 45px;
+}
+
+ 
+/*  */
+.hide-login {
+    display: none;
+}
+  
+
+.LogIn_fon {
+    background-image: url('../images/sweet-ice-cream-photography-ootMB9iANOc-unsplash.jpg');
+    height: 84px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+.LogIn_close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+.LogIn_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.custom-input {
+    width: 240px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    text-align: left;
+}
+.custom-input::placeholder {
+    color: #A0A0A0;
+    font-family: 'Poppins';
+}
+.forgot-link-container {
+    padding-left: 20px;
+    margin-top: 8px;
+}
+.forgot-password {
+    font-size: 12px;
+    color: #8E8E8E;
+    text-decoration: none;
+    font-family: 'Poppins'; 
+}
+.LogIn_button {
+    background-color: #A87B62;
+    text-align: center;
+    border: none;
+    color: white;
+    width: 240px;
+    height: 68px;
+}
+.text-under-button {
+    display: flex;
+}
+ @media (min-width:321px) {
+    .LogIn {
+        width: 442px;
+    }
+    .LogIn_fon {
+    height: 138px;
+    }
+    .LogIn_button {
+        width: 340px;
+    }
+ }
+
+
+ 

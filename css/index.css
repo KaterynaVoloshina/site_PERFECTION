@@ -1,41 +1,3 @@
-.header {
-    height: 92px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-}
-@media (min-width: 321px) {
-    .header{
-        padding: 45px;
-    }
-}
-@media (min-width: 769px) {
-    .header{
-        padding: 98px;
-    }
-}
-
-.main {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 15px;
-    gap: 70px;
-}
-@media (min-width: 321px) {
-    .main{
-        padding: 0 45px;
-    }
-}
-@media (min-width: 769px) {
-    .main{
-        padding: 0 98px;
-    }
-}
-
-
 .scrin-first {
     background: url('../images/main-img-mobile.jpg');
     height: 463px;
@@ -57,80 +19,6 @@
     }
 }
 
-
-.new-in {
-    display: flex;
-    flex-direction: column;
-    margin-top: 70px;
-    gap: 40px;
-}
-.section-name{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.name-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.new-in_shop-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.shop-card {
-    flex: 0 0 calc((100% - 30px) / 2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-@media (min-width: 769px){
-    .shop-card {
-        flex: 0 0 calc((100% - 90px) / 4);
-    }
-}
-.hide {
-        display: none;
-}
-
-@media (min-width:769px){
-    .hide {
-        display: flex;
-    }
-}
-.shop-card_gap-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px; 
-}
-.cards-page-mobile, .cards-page-tablet, .cards-page-decstop {
-    display: none;
-}
-
-@media (max-width: 320px) {
-    .cards-page-mobile {
-        display: flex;
-        justify-content: center;
-    }
-}
-@media (min-width: 321px) and (max-width: 768px) {
-    .cards-page-tablet {
-        display: flex;
-        justify-content: center;
-    }
-}
-@media (min-width: 769px) {
-    .cards-page-decstop {
-        display: flex;
-        justify-content: center;
-    }
-}
 .blog {
     display: flex;
     flex-direction: column;
@@ -287,7 +175,7 @@
     }
     .Chjewellery_galery-big-display {
         display: flex;
-        gap: 16px;
+        gap: 20px;
         width: 100%;
         height: 240px;
     }
@@ -297,16 +185,23 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        gap: 20px;
+        gap: 16px;
+      
     }
 
     .column-big-display-img {
         flex: 2;  
         display: flex;
         height: 100%;
+        object-fit: cover;
     }
 
     .big-display-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .small-display-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
