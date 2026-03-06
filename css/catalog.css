@@ -103,10 +103,10 @@
     .filter_text {
         gap: 15px;
     }
-        /* */
+        /* 
     .hide-filter {
     display: none;
-    }
+    }*/
     .button-apply {
     margin-top: 25px;
     width: 90%;
@@ -119,10 +119,6 @@
     }
 
 }
-        /* */
-    .hide-filter {
-    display: none;
-    } 
 
 
 input[type="checkbox"] {
