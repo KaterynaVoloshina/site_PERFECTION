@@ -85,7 +85,7 @@
 
 
 @media (max-width:768px){
-    .windows-filter {
+    .windows-filter { 
         display: block;
         position: fixed;
         background-color: white;
@@ -103,10 +103,10 @@
     .filter_text {
         gap: 15px;
     }
-        /* 
+        /* */
     .hide-filter {
     display: none;
-    }*/
+    }
     .button-apply {
     margin-top: 25px;
     width: 90%;
@@ -119,10 +119,10 @@
     }
 
 }
-        /*
+        /* */
     .hide-filter {
     display: none;
-    } */
+    } 
 
 
 input[type="checkbox"] {
